@@ -1,0 +1,29 @@
+{
+  "name": "frontend-boilerplate",
+  "homepage": "https://github.com/mukeshkumar108/frontend-boilerplate",
+  "authors": [
+    "Mukesh Kumar <kaiser.kumar108@gmail.com>"
+  ],
+  "description": "opinionated front-end boilerplate using HTML5BP, Bourbon, Neat, & Sanitize",
+  "main": "",
+  "keywords": [
+    "bourbon",
+    "neat",
+    "sanitize",
+    "html5bp"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bourbon": "^4.2.7",
+    "neat": "^1.7.4",
+    "sanitize-css": "^3.3.0",
+    "jquery": "^2.2.3"
+  }
+}
