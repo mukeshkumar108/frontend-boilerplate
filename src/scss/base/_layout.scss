@@ -1,0 +1,8 @@
+.wrap {
+	@include outer-container();
+}
+
+.col-half {
+	@include span-columns(6);
+}
+

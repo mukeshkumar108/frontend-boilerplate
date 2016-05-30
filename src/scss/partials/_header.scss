@@ -1,0 +1,17 @@
+.site-header {
+  @include span-columns(12);
+  @include omega();
+  //background: #eee;
+  text-align: center;
+  background-color: $black;
+  color: #fff;
+
+  h1 {
+    color: #fff;
+  }
+}
+
+
+.site-title {
+  font-style: 1.25em;
+}

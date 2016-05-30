@@ -1,0 +1,51 @@
+/* Animations */
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* General styles */
+.page-content {
+  animation-duration: 3s;
+  animation-name: fadein;
+}
+
+
+.wrapper {
+  @include outer-container();
+  //border-top: 5px solid $dark-gray;
+  padding: 1em;
+  width: 85%;
+}
+
+.page-content {
+  @include span-columns(12);
+  @include omega();
+  //padding-top: $gutter;
+
+  h1 {
+    //line-height: 1em;
+  }
+
+  @media (min-width: $large-screen) {
+    padding-top: 4.5em;
+  }
+}
+
+.post-content {}
+
+.page-content,
+.site-footer {
+	//width: 768px;
+  max-width: 34em;
+  float: none!important; 
+  margin: 0 auto!important;
+}
+
+.right {
+	text-align: right;
+}

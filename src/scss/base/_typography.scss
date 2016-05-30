@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Serif);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+
+// Basic settings for typography, using Bourbon font-family addon
+$sans-serif: $helvetica;
+$serif: 'pt serif', $georgia;
+$base-font-family: $serif;
+$header-font-family: 'oswald', 'bebas neue', $helvetica;
+$alt-font-family: $header-font-family; 
+
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: $base-background-color;
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $unitless-line-height;
+  @media(min-width: $medium-screen) {
+    //font-size: 115%;
+  }
+  @media(min-width: $large-screen) {
+    font-size: 110%;
+    line-height: 1.375;
+  }
+  @media(min-width: $x-large-screen) {
+    font-size: 120%;
+  }
+  @media(min-width: $xx-large-screen) {
+    font-size: 130%;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $header-font-family;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: $header-line-height;
+  margin: 0;
+  text-rendering: optimizeLegibility;
+  letter-spacing: -0.018em;
+  color: $black;
+}
+
+h1 {
+  font-size: $base-font-size * 2.5;
+}
+
+h2 {
+  font-size: $base-font-size * 2.25;
+}
+
+h3 {
+  font-size: $base-font-size * 2;
+}
+
+h4 {
+  font-size: $base-font-size * 1.75;
+}
+
+h5 {
+  font-size: $base-font-size * 1.5;
+}
+
+h6 {
+  font-size: $base-font-size * 1.25;
+}
+
+a {
+  @include transition(color 0.1s linear);
+  color: $base-link-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $hover-link-color;
+  }
+
+  &:active, &:focus {
+    color: $hover-link-color;
+    outline: none;
+  }
+}
+
+.font--alt {
+  font-family: $alt-font-family;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+p {
+  margin: $gutter 0;
+}

@@ -1,0 +1,36 @@
+figure {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+img {
+	width: 100%;
+}
+
+.feat-img {
+	width: 100%;
+	//margin: 0;
+	margin-bottom: $gutter;
+	//padding: 0;
+	@include media($large-screen) {
+		width: 115%;
+		margin-left: -7.5%;
+	}
+}
+
+.p-intro {
+  	font-size: 1.4em;
+  	margin-top: 0;
+  	margin-bottom: $gutter / 2;
+  	&::first-letter {
+  		font-size: 2.7em;
+    	color: $brand-red;
+    	line-height: 1;
+    	float: left;
+    	margin: 0;
+    	padding: 0;
+    	padding-right: 0.1em;
+    	padding-top: 0.01em;
+  	}
+}
